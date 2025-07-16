@@ -155,21 +155,6 @@ params:
         cusdis:
             host:
             id:
-    widgets:
-        enabled:
-
-            - toc
-            - categories
-            - archives
-            - tag-cloud
-
-
-        archives:
-            limit: 5
-
-        tagCloud:
-            limit: 10
-
     opengraph:
         twitter:
             # Your Twitter username
