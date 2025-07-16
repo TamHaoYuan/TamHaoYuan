@@ -1,4 +1,4 @@
-baseurl: https://example.com
+baseurl: https://TamHaoYuan.github.io/
 languageCode: zh-cn
 theme: stack
 pagerSize: 5
@@ -31,7 +31,7 @@ params:
 
     footer:
         since: 2025
-        customText:
+        customText: "© 2025 yiyuan"
 
     dateFormat:
         published: Jan 02, 2006
@@ -39,13 +39,14 @@ params:
 
     sidebar:
         emoji: 🪐
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: Non est ad astra mollis e terris via.
         avatar:
             enabled: true
             local: true
             src: img/avatar.png
 
     article:
+        headingAnchor: true
         math: false
         toc: true
         readingTime: true
@@ -202,7 +203,7 @@ params:
 menu:
     main:
         - identifier: home
-          name: Home
+          name: 首页
           url: /
           weight: -100
           params:
@@ -214,14 +215,28 @@ menu:
         - identifier: github
           name: GitHub
           url: https://github.com/TamHaoYuan/
+          weight: 1
           params:
               icon: brand-github
 
         - identifier: twitter
+          weight: 4
           name: Twitter
           url: https://twitter.com
           params:
               icon: brand-twitter
+        - identifier: bilibili
+          weight: 2
+          name: Bilibili
+          url: https://space.bilibili.com/1289125124/
+          params:
+              icon: rss
+        - identifier: email
+          weight: 3
+          name: Email
+          url: tamhaoyuan47@gmail.com
+          params:
+              icon: mail
 
 related:
     includeNewer: true
@@ -244,4 +259,7 @@ markup:
         ordered: true
         startLevel: 2
     highlight: 
-        style: onedark   
+        style: onedark
+google_site_verification: "yiyuan的博客"
+bing_site_verification: "yiyuan的博客"
+

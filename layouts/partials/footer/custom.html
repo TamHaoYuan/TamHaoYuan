@@ -1,0 +1,51 @@
+<div id="back-top">
+    <a href="#top" title="回到顶部"></a>
+</div>
+<style>
+    #back-top {
+        position: fixed;
+        bottom: 30px;
+        right: 80px;
+    }
+    #back-top a {
+        width: 54px;
+        height: 54px;
+        display: block;
+        background: #ddd url(/images/back_top.svg) no-repeat center center;
+        background-color: rgba(218, 214, 214, 0.87);
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        transition: 1s;
+    }
+    #back-top a:hover {
+        background-color: #e88282;
+    }
+</style>
+
+<script type="text/javascript">
+    $("#back-top").hide();
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#back-top').fadeIn();
+            } else {
+                $('#back-top').fadeOut();
+            }
+        });
+        $('#back-top a').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+    });
+</script>
+{{if .Page.Site.Params.fancybox }}
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+{{ end }}
+

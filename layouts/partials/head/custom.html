@@ -14,3 +14,11 @@
 		    document.head.appendChild(customFont);
 		}());
 </script>
+{{ if .Site.Params.google_site_verification }}
+<meta name="google-site-verification" content="{{ .Site.Params.google_site_verification }}" />
+{{ end }}
+
+{{ if .Site.Params.bing_site_verification }}
+<meta name="msvalidate.01" content="{{ .Site.Params.bing_site_verification }}" />
+{{ end }}
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
