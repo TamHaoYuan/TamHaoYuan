@@ -53,7 +53,20 @@ params:
         license:
             enabled: true
             default: Licensed under CC BY-NC-SA 4.0
-
+    widgets:	# 右侧导航栏，即在页面右边显示：搜索、归档、标签，将对应的 type 注释掉则不显示
+        homepage:
+            - type: search  # 首页搜索框
+            - type: archives    # 首页归档
+              params:
+                  limit: 5
+            - type: categories  # 首页分类
+              params:
+                  limit: 10
+            - type: tag-cloud   # 首页标签云
+              params:
+                  limit: 10
+        page:
+            - type: toc # 文章目录
     comments:
         enabled: true
         provider: waline

@@ -8,7 +8,7 @@ comments: false
 license: false
 menu: 
     main:
-        name: 友链
+        name: 朋友们
         weight: -90
         params:
             icon: home
