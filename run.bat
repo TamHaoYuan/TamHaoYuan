@@ -1,5 +1,7 @@
 @echo off
+echo 【local server】
 hugo
-hugo server
 start msedge.exe http://localhost:1313/
+hugo server
 pause
+

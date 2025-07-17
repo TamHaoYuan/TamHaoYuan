@@ -146,7 +146,8 @@
     margin: 0; //改为0
 
     &.show {
-        display: block;
+        display: flex;
+
     }
 
     @include respond(md) {

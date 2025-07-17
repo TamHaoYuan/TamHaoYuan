@@ -1,19 +1,23 @@
 <style>
     :root {
-        --article-font-family: "Noto Serif SC", var(--base-font-family);
-    }
+    /* 在style中优先调用HarmonyOS_Sans_SC_Medium */
+    --sys-font-family: "HarmonyOS_Sans_SC_Medium", Georgia, -apple-system, 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
+    --code-font-family: "JetBrainsMono Regular", Menlo, Monaco, Consolas, "Courier New";
+    --article-font-family: "HarmonyOS_Sans_SC_Medium", var(--base-font-family);
+  }
 </style>
 
-<script> //正文字重300，标题字重700
-		(function () {
-		    const customFont = document.createElement('link');
-		    customFont.href = "https://fonts.bunny.net/css2?family=Noto+Serif+SC:wght@300;700&display=swap"; 
-		    customFont.type = "text/css";
-		    customFont.rel = "stylesheet";
-		
-		    document.head.appendChild(customFont);
-		}());
+
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://img.shimoko.com/fonts/font.css";
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+         document.head.appendChild(customFont);
+}());
 </script>
+
 {{ if .Site.Params.google_site_verification }}
 <meta name="google-site-verification" content="{{ .Site.Params.google_site_verification }}" />
 {{ end }}
