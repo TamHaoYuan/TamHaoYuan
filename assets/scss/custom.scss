@@ -15,7 +15,14 @@
     // 行内代码前景色
     --code-text-color: #e96900;
     // 暗色模式下样式
-    &[data-scheme="dark"] {
+    &[data-scheme="dark"] 
+    {
+          // 背景色
+      --body-background: #000000;
+          --scrollbar-thumb: #24242480;
+      // 文章卡片背景色
+      --card-background: #121212;
+      --emphasize-text-color: #d5cfc4; 
       // 行内代码背景色
       --code-background-color: #ff6d1b17;
       // 行内代码前景色
