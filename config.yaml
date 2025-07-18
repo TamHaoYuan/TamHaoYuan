@@ -1,5 +1,5 @@
 baseurl: https://TamHaoYuan.github.io/
-languageCode: zh-cn
+languageCode: zh-CN
 theme: stack
 pagerSize: 5
 title: yiyuan
@@ -82,13 +82,6 @@ params:
             emitMetadata: 0
             inputPosition: bottom
             lang: zh-CN
-
-        disqusjs:
-            shortname:
-            apiUrl:
-            apiKey:
-            admin:
-            adminLabel:
 
         utterances:
             repo:
