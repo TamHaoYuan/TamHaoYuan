@@ -8,6 +8,8 @@ license:
 hidden: false
 comments: true
 draft: false
+categories: ["杂技浅尝"]
+toc: true
 
 ---
 

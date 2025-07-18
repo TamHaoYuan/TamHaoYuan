@@ -8,7 +8,8 @@ aliases:
   - about-hugo
   - contact
 license: CC BY-NC-ND
-lastmod: '2023-08-16'
+lastmod: '2025-07-16'
+toc: true
 menu:
     main: 
         name: 关于
